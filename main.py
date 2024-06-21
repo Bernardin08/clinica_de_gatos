@@ -24,7 +24,7 @@ def gato_velho(list_gato_p):
 
     gato_mais_velho = list_gato_p[0]
     for gato in list_gato_p:
-        if gato.idade > gato_mais_velho.idade:
+        if int(gato.idade) >= int(gato_mais_velho.idade):
             gato_mais_velho = gato
     print(gato_mais_velho)
 
@@ -82,22 +82,20 @@ def main():
              
         if opcao == '1':
             for gato in gatos:
-                print("Lista de Gatos:  ",gato)
+                print("Gatos:  ",gato)
         elif opcao == '2':
             cadastrar_gatos(gatos)
-
+            salvar_dados(usuarios, gatos)
         elif opcao == '3':
             print("Este é o gato mais velho")
             list_gato = carregar_lista_gatos()
             gato_velho(list_gato)
 
         elif opcao == '4':
-            salvar_dados(usuarios, gatos)
             print("Dados salvos. Saindo...")
             break
         else:
             print("Opção inválida.")
-
 main()
 
 

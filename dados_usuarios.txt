@@ -1,4 +1,4 @@
 usuario: admin,1234
-Gato: jorge,123,preto,foda
-Gato: julio,23,branco,yuo
-Gato: pedrin,1245,azul,asol
+Gato: pedro,0,preto,forl
+Gato: julio,200,azul,pole
+Gato: felipe,1,verde,dasd
